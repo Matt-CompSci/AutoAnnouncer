@@ -39,7 +39,7 @@ public class AutoAnnounce {
     }
 
     public static void AnnounceIfReqd(MinecraftServer server) {
-        if( TicksPassed <= 0 ) {
+        if( TicksPassed <= 0 || (TicksPassed % 20) != 0 ) {
             return;
         }
 
