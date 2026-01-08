@@ -15,7 +15,6 @@ public class AutoAnnounceConfig {
 
     public static class AnnouncementInfo {
         public int FrequencySeconds;
-        public int OffsetSeconds;
         public String AnnouncementMsg;
 
         public AnnouncementInfo( int FrequencySeconds, String AnnouncementMsg ) {
