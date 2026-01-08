@@ -39,6 +39,10 @@ public class AutoAnnounce {
     }
 
     public static void AnnounceIfReqd(MinecraftServer server) {
+        if( TicksPassed <= 0 ) {
+            return;
+        }
+
         long seconds = TicksPassed / 20;
 
         for( var Announcement : ModConfig.Announcements ) {
